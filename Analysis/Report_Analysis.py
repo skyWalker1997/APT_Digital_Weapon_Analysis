@@ -3,9 +3,9 @@ import pickle
 import json
 import numpy
 
-root_dir = '/Users/skywalker/Desktop/APT_Malware_Sandbox_Data_Analysis/APT/'
-result_dir = '/Users/skywalker/Desktop/APT_Malware_Sandbox_Data_Analysis/APT_Analysis_Result/'
-val = os.system('find \'/Users/skywalker/Desktop/APT_Malware_Sandbox_Data_Analysis/APT/\' -name \'*.DS_Store\' -type f -delete')
+from Analysis.Path_Info import root_dir,result_dir,DS_strore_command
+
+val = os.system('DS_strore_command')
 dirs = os.listdir(root_dir)
 dirs.sort()
 APT_list = dirs
